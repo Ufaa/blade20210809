@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blade test</title>
+  <title>COACHTECH</title>
 </head>
 
 <body>
-  <form action="TestController.php" method="POST">
-    <label>数字を入力して下さい：<input type="text" name="number"></label>
-    <br />
-    <input type="submit" name="submit" value="送信する" />
+  <h1>{{$content}}</h1>
+  <form action="/" method="POST">
+    @csrf
+    <input type="text" name="content" >
+    <input type="submit"  >
   </form>
 </body>
 
